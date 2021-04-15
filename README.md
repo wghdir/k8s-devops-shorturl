@@ -114,7 +114,7 @@ data:
     Transform:
       Etcd:
         Hosts:
-          - your-ip:2379
+          - 127.0.0.1:2379
         Key: transform.rpc
 ```
 
@@ -133,12 +133,12 @@ data:
     ListenOn: 0.0.0.0:8081
     Etcd:
       Hosts:
-      - your-ip:2379
+      - 127.0.0.1:2379
       Key: transform.rpc
-    DataSource: root:123456@tcp(your-ip:3306)/shorturl?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+    DataSource: root:123456@tcp(127.0.0.1:3306)/shorturl?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
     Table: shorturl
     Cache:
-      - Host: your-ip:6379
+      - Host: 127.0.0.1:6379
 ```
 
 ### .drone.yml

@@ -1,0 +1,9 @@
+[{
+    "targets": ["127.0.0.1:9091"],
+    "labels": {
+        "job": "shorturl-api",
+        "app": "shorturl-api",
+        "env": "test",
+        "instance": "127.0.0.1:8888"
+    }
+}]
